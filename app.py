@@ -1,15 +1,17 @@
 from flask import Flask, render_template, request, redirect, url_for, jsonify
 import psycopg2
+from dotenv import load_dotenv
+load_dotenv()
 
 app = Flask(__name__)
 
 def get_db_connection():
     return psycopg2.connect(
-        database="flaskpostgres_db",
-        user="postgres",
-        password="mugu",
-        host="localhost",
-        port="5432"
+        database=os.getenv("DB_NAME"),
+        user=os.getenv("DB_USER"),
+        password=os.getenv("DB_PASSWORD"),
+        host=os.getenv("DB_HOST"),
+        port=os.getenv("DB_PORT")
     )
 
 @app.route('/')
