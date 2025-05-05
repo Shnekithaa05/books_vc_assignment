@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, jsonify
 import psycopg2
+import os
 from dotenv import load_dotenv
 load_dotenv()
 
