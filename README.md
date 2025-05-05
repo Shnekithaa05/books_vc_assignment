@@ -30,7 +30,7 @@ A simple CRUD web application built with **Flask** and **PostgreSQL** to manage 
 ### 1. Clone the Repository
 
 ```bash
-git clone git@github.com:YourUsername/books_vc_assignment.git
+git clone https://github.com/Shnekithaa05/books_vc_assignment.git
 cd books_vc_assignment
 ```
 
